@@ -1,0 +1,4 @@
+name: MyLord
+version: '1.0'
+main: sudark2.Sudark.myLord.MyLord
+api-version: '1.21'
