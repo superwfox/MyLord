@@ -1,17 +1,16 @@
 package sudark2.Sudark.myLord;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class MyLord extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
 
-    }
+        Bukkit.getPluginManager().registerEvents(new PlayerTame(),this);
 
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
+        TameRelationship.newTask(this);
+
     }
 }
